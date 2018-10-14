@@ -21,7 +21,7 @@ def url_hash(url):
         if url[i] == ':':
             pref = i
             break
-    return np.uint64(((hash_simple(url,pref) & 0x0000FFFF) << 32)) + np.uint64(hash_simple(url,l))
+    return str(np.uint64(((hash_simple(url,pref) & 0x0000FFFF) << 32)) + np.uint64(hash_simple(url,l)))
 
 
 if __name__=="__main__":
