@@ -9,6 +9,6 @@ def url_fix(conn):
     conn.commit()
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("fullpath",help="Insert the FULLPATH to places.sqlite DB")
-    fullpath = parser.parse_args().fullpath
-    url_fix(sqlite3.connect(fullpath))
+    parser.add_argument("conn",help="Insert the conn of the DB to update")
+    conn = parser.parse_args().conn
+    url_fix(sqlite3.connect(conn))
