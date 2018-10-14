@@ -9,6 +9,6 @@ def oldreddit(conn):
     url_fix(conn)
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("conn",help="Insert the conn of the DB to update")
-    conn = parser.parse_args().conn
-    oldreddit(sqlite3.connect(conn))
+    parser.add_argument("fullpath",help="Insert the path of the DB to update")
+    fullpath = parser.parse_args().fullpath
+    oldreddit(sqlite3.connect(fullpath))
