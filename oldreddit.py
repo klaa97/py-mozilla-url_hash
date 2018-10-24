@@ -4,7 +4,7 @@ import sqlite3
 
 def oldreddit(conn):
     c = conn.cursor()
-    c.execute("UPDATE moz_places SET url = replace(url, 'https://reddit.com/', 'https://old.reddit.com/'), url_hash = 0 WHERE url like 'https://reddit.com/%'")
+    c.execute("UPDATE moz_places SET url = replace(url, 'https://www.reddit.com/', 'https://old.reddit.com/'), url_hash = 0 WHERE url like 'https://www.reddit.com/%'")
     conn.commit()
     url_fix(conn)
 if __name__=="__main__":
