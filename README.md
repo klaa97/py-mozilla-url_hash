@@ -11,3 +11,4 @@ Importing the file, you'll need to pass as argument the connection to the databa
 A toy example is oldreddit.py, that lets you convert all of your https://reddit.com links into https://old.reddit.com link, usage is the same as url_fix.py.
 # Reference
 https://dxr.mozilla.org/mozilla-central/source/mfbt/HashFunctions.h
+https://github.com/bencaradocdavies/sqlite-mozilla-url-hash
